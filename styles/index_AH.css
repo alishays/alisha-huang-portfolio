@@ -1,0 +1,496 @@
+/*INFO3130-Section1-Assignment 1
+ * This assignment is for Alisha Huang Portfolio
+ * 
+ * Revision History
+ *      Alisha Huang, 2021,09,17: Created
+ */
+
+
+/*
+Font download from <a href="https://allfont.net/download/agency-fb/">all font.net</a>is licensed by CC BY 3.0
+Free for Personal Use
+*/
+@font-face {
+    font-family: Agency FB;
+    src: local("Agency FB"),
+        url(../fonts/AGENCYB.TTF);
+}
+
+/*
+Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0.
+Free for Personal Use
+*/
+@font-face {font-family: Segoe Script; 
+    src: local("Segoe Script"); 
+    src: url(../fonts/Segoe_Script.ttf);
+}
+
+/*
+Font download from <a href="https://freefontsfamily.com/segoe-ui-font-free/">free fonts family</a>is licensed by CC BY 3.0
+Free for Personal Use
+*/
+@font-face {font-family: Segoe UI; 
+    src: local("Segoe UI"); 
+    src: url(../fonts/SEGOEUI.TTF);
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: "Mamelon", "Agency FB","Segoe UI", "Helvetica Neue", Arial, sans-serif;	
+    font-size: 1.2em;
+    text-align: center;
+	color: #000000;
+    width: auto;
+    height: auto;
+    min-width:1280px;
+    min-height: 876px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div, section, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    z-index: 999;
+    background-color: white;
+    position: fixed;
+}
+
+#ahHome{
+    display: inline-block;
+}
+
+header img {
+    float: left;
+    margin-right: 0.5em;
+}
+
+#ahMenu li{
+    font-family: "Agency FB", "Mamelon", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+#ahMenu li a, header a{
+    color: #484848;
+    text-decoration: none;
+    font-size: 1.35em;
+    font-weight: bold;
+}
+
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+/*Cover Page*/
+#coverPage{
+    width: 100%;
+    height: 876px;
+}
+
+#ahLogo{
+    margin-top: 200px;
+    padding-bottom: 1em;
+}
+
+#greyBoxForHome{
+    width: 100%;
+    height: 182px;
+    background-color: #605F5F;
+    color: white;
+}
+
+#greyBoxForHome h1{
+    font-family: "Segoe Script", "Agency FB", "Mamelon", "Segoe UI","Helvetica Neue", Arial, sans-serif;
+    font-size: 2.5em;
+    padding: 0.2em;
+}
+
+#greyBoxForHome h2{
+    font-size: 2.2em;
+}
+
+/*About Page*/
+
+#about{
+    width: 100%;
+    height: 100%;
+}
+
+#introductionBox {
+    margin-top: 2em;
+    width: 100%;
+    height: 33%;
+    background-color: #C7C7C7;
+    color: #484848;
+    padding-bottom: 1em;
+}
+
+#introductionBox h2{
+    font-size: 1.9em;
+    padding-top: 2em;
+    padding-left: 3em;
+    text-align: left;
+}
+#introductionBox p{
+    font-size: 1.25em;
+    padding-top: .5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 1em;
+    text-align: left;
+}
+
+#skillsBox {
+    width: 100%;
+    height: 33%;
+    background-color: white;
+    color: #484848;
+    padding-bottom: 1em;
+}
+
+
+#skillsBox h2{
+    width: 30%;
+    font-size: 2.2em;
+    padding-top: 2em;
+    padding-left: 2em;
+    text-align: left;
+    float: left;
+    position: relative;
+}
+
+#skillsBox li{
+    list-style: none;
+    margin: 10px;
+    font-size: 1.4em;
+}
+
+#skill1 {
+    width: 40%;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    float: left;
+    position: relative;
+}
+
+#skill2 {
+    padding-top: .5em;
+    padding-bottom: 1em;
+    float: left;
+    position:relative;
+}
+
+#interestsBox{
+    width: 30%;
+    height: 33%;
+    background-color: #9EA3A3;
+    color: white;
+    float: left;
+    position: relative;
+    padding-bottom: 2em;
+
+}
+
+#interestsBox h2{
+    font-size: 2.2em;
+    padding-top: .5em;
+    padding-left: 3em;
+    text-align: left;
+}
+
+#interestsBox li{
+    width: 50%;
+    list-style: none;
+    margin: 10px;
+    font-size: 1.4em;
+    text-align: left;
+
+}
+
+#interest1 {
+    padding-top: 1em;
+    padding-left: 3em;
+    float: left;
+    position: relative;
+}
+
+#interest2{
+    padding-top: 1em;
+    padding-left: 1.2em;
+    float: left;
+    position: relative;
+}
+
+#programmingLanBox{
+    width: 70%;
+    height: 33%;
+    background-color: #E4E4E4;
+    color: #484848;
+    float: left;
+    position: relative;
+    padding-bottom: 2em;
+}
+
+#programmingLanBox h2{
+    font-size: 2.2em;
+    padding-top: .5em;
+    padding-left: 3em;
+    text-align: left;
+}
+
+#programmingLanBox li{
+    list-style: none;
+    margin: 10px;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+#lan1 {
+    width: 34%;
+    padding-top: 1em;
+    padding-left: 6em;
+    float: left;
+    position: relative;
+}
+#lan2 {
+    width: 33%;
+    padding-top: 1em;
+    float: left;
+    position: relative;
+}
+#lan3 {
+    width: 33%;
+    padding-top: 1em;
+    float: left;
+    position: relative;
+}
+
+/*Portfolio 1*/
+#portfolio1{
+    padding-top: 6em;
+    padding-bottom: 2em;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #484848;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#prot1Text{
+    float: left;
+    position: relative;
+    text-align: left;
+    margin: 10px;
+    padding-left: 13em;
+    padding-top: 6em;
+}
+
+#prot1Text h1{
+    font-size: 3em;
+    padding-bottom: .25em;
+}
+
+#prot1Text h2{
+    font-size: 1.8em;
+    padding-bottom: .25em;
+    font-family: "Segoe UI","Mamelon", "Agency FB";
+    font-weight:500;
+}
+
+#prot1Text p{
+    font-size: 1.25em;
+    padding-top: 1em;;
+    padding-bottom: .25em;
+    font-family: "Segoe UI","Mamelon", "Agency FB";
+    font-weight:500;
+}
+
+#portfolio1 img{
+    float: left;
+    position: relative;
+    padding-left: 4em;
+}
+
+/*Portfolio 2*/
+#portfolio2{
+    padding-top: 6em;
+    padding-bottom: 2em;
+    width: 100%;
+    height: 100%;
+    background-color: #D4E9E2;
+    color: #484848;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#prot2Text{
+    float: left;
+    position: relative;
+    text-align: left;
+    margin: 10px;
+    padding-left: 6em;
+    padding-top: 8em;
+}
+
+#prot2Text h1{
+    font-size: 3em;
+    padding-bottom: .25em;
+}
+
+#prot2Text h2{
+    font-size: 1.8em;
+    padding-bottom: .25em;
+    font-family: "Segoe UI","Mamelon", "Agency FB";
+    font-weight:500;
+}
+
+#prot2Text p{
+    font-size: 1.25em;
+    padding-top: 1em;;
+    padding-bottom: .25em;
+    font-family: "Segoe UI","Mamelon", "Agency FB";
+    font-weight:500;
+}
+
+#portfolio2 img{
+    float: left;
+    position: relative;
+    padding-left: 12em;
+}
+
+
+/*Portfolio 3*/
+#portfolio3{
+    padding-top: 6em;
+    padding-bottom: 10em;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #484848;
+    box-sizing: border-box;
+}
+
+#port3Text{
+    float: left;
+    position: relative;
+    text-align: left;
+    margin: 10px;
+    padding-left:10em;
+    padding-top: 2em;
+}
+
+#port3Text h1{
+    font-size: 3em;
+    padding-bottom: .25em;
+}
+
+#port3Text h2{
+    font-size: 1.8em;
+    padding-bottom: .25em;
+    font-family: "Segoe UI","Mamelon", "Agency FB";
+    font-weight:500;
+}
+
+#port3Text p{
+    font-size: 1.25em;
+    padding-top: 1em;;
+    padding-bottom: .25em;
+    font-family: "Segoe UI","Mamelon", "Agency FB";
+    font-weight:500;
+}
+
+#portfolio3 img{
+    float: right;
+    position: relative;
+    padding-left:2em;
+    padding-right:8em;
+
+}
+
+/*Portfolio 4*/
+#portfolio4{
+    margin-bottom: 2em;;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    width: 100%;
+    height: 100%;
+    background-color: #EEE8DB;
+    color: #484848;
+    box-sizing: border-box;
+}
+
+#port4Text{
+    float: right;
+    position: relative;
+    text-align: left;
+    margin: 10px;
+    padding-right:10em;
+    padding-top: 2em;
+}
+
+#port4Text h1{
+    font-size: 3em;
+    padding-bottom: .25em;
+}
+
+#port4Text h2{
+    font-size: 1.8em;
+    padding-bottom: .25em;
+    font-family: "Segoe UI","Mamelon", "Agency FB";
+    font-weight:500;
+}
+
+#port4Text p{
+    font-size: 1.25em;
+    padding-top: 1em;;
+    padding-bottom: .25em;
+    font-family: "Segoe UI","Mamelon", "Agency FB";
+    font-weight:500;
+}
+
+#portfolio4 img{
+    float: left;
+    position: relative;
+    padding-left:8em;
+    padding-top: 2em;;
+
+}
+
+
+/*footer*/
+footer{
+	clear: both;
+}
+
+#footerBox{
+    background-color: #605F5F;
+    width: 100%;
+    height: 95px;
+}
+
+footer figure {
+    display: inline-block;
+    text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}

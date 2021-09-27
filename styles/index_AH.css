@@ -84,6 +84,14 @@ header img {
     list-style: none;
     display: inline-block;
     margin: 10px;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+#ahMenu li:hover{
+    -moz-box-shadow: 0 0 15px #ccc;
+    -webkit-box-shadow: 0 0 15px #ccc;
+    box-shadow: 0 0 15px #ccc;
 }
 
 #ahMenu li a, header a{
@@ -202,7 +210,7 @@ section{
 #interestsBox{
     width: 30%;
     height: 33%;
-    background-color: #9EA3A3;
+    background-color: #605F5F;
     color: white;
     float: left;
     position: relative;
@@ -474,6 +482,78 @@ section{
     padding-left:8em;
     padding-top: 2em;;
 
+}
+
+/*Contact page*/
+#contactPage{
+    margin-bottom: 2em;;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #484848;
+    box-sizing: border-box;
+}
+
+#contactText{
+    float: left;
+    position: relative;
+    text-align: left;
+    margin: 10px;
+    padding-left:10em;
+    padding-top: 2em;
+}
+
+#contactText h1{
+    font-size: 3em;
+    padding-bottom: 2em;
+}
+
+
+#contactText p{
+    font-size: 1.3em;
+    padding-top: .25em;;
+    padding-bottom: .25em;
+    padding-left:6em;
+    font-family: "Segoe UI","Mamelon", "Agency FB";
+    font-weight:500;
+}
+
+#contactPage img{
+    float: right;
+    position: relative;
+    padding-right: 5em;
+}
+
+/* hover effect*/
+#contactPage img:hover,
+#portfolio1 img:hover,
+#portfolio2 img:hover,
+#portfolio3 img:hover,
+#portfolio4 img:hover,
+header img:hover,
+footer img:hover{
+    opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 

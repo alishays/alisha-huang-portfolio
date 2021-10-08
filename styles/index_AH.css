@@ -3,6 +3,7 @@
  * 
  * Revision History
  *      Alisha Huang, 2021,09,17: Created
+        Alisha Huang, 2021,10,04: Modified
  */
 
 
@@ -35,7 +36,7 @@ Free for Personal Use
 }
 
 html{
-	scroll-behavior: auto;
+	scroll-behavior: smooth;
 }
 
 body{
@@ -43,7 +44,7 @@ body{
     font-size: 1.2em;
     text-align: center;
 	color: #000000;
-    width: auto;
+    width: 100%;
     height: 100vh;
 }
 
@@ -52,41 +53,33 @@ body{
 	padding: 0;
 }
 
-div, section, ul, li, a, header{
-    box-sizing: border-box;
-}
-
-
 header{
-    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-    position: fixed;
-    z-index: 999;
     background-color: white;
+    width: 100%;
 }
 
 #ahHome{
     display: flex;
-    justify-content: flex-start;
 }
 
 header img {
     float: left;
     margin-right: 0.5em;
     display: flex;
-    justify-content: flex-start;
 }
 
-header ul{
+.navigation{
     display: flex;
-    justify-content: flex-end;
-    z-index: 999;
+    overflow: hidden;
+    padding-right: 30px;
 }
 
-#ahMenu li{
+.navigation li{
     font-family: "Agency FB", "Mamelon", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     list-style: none;
     margin: 10px;
@@ -94,36 +87,43 @@ header ul{
     text-transform: uppercase;
 }
 
-#ahMenu li:hover{
-    -moz-box-shadow: 0 0 20px #DFC5AE;
-    -webkit-box-shadow: 0 0 20px #DFC5AE;
-    box-shadow: 0 0 20px #DFC5AE;
+.navigation li:hover{
+    -moz-box-shadow: 0 0 30px #DFC5AE;
+    -webkit-box-shadow: 0 0 30px #DFC5AE;
+    box-shadow: 0 0 30px #DFC5AE;
     border-radius: 50%;
+    font-size: large;
 }
 
-#ahMenu li a, header a{
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+.navigation li a, header a{
     color: #484848;
     text-decoration: none;
     font-size: 1.35em;
     font-weight: bold;
 }
 
-section{
-    width: 100%;
-    height: 100vh;
-}
-
 /*Cover Page*/
+
 .coverPageContainer{
-    width: 100%;
-    height: min-content;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: min-content;
+    width: 100%;
 }
 
 #ahLogo{
     padding-bottom: 1em;
-    grid-column:  2;
+    grid-column:  3/4;
     margin-left:auto;
     margin-right:auto;
     margin-top: 100px;
@@ -134,29 +134,30 @@ section{
 }
 
 #greyBoxForHome{
-    width: 100%;
     height:max-content;
     background-color: #605F5F;
     color: white;
-    grid-column: 1 / 4;
+    grid-column: 1 / 6;
 }
 
 #greyBoxForHome h1{
     font-family: "Segoe Script", "Agency FB", "Mamelon", "Segoe UI","Helvetica Neue", Arial, sans-serif;
     font-size: 2.5em;
     padding: 0.2em;
+    margin-top: .4em;
 }
 
 #greyBoxForHome h2{
     font-size: 2.2em;
+    margin-bottom: .4em;
 }
 
 /*About Page*/
 #about{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 1fr 1fr;
     height: min-content;
+    width: 100%;
 }
 
 .introductionBox {
@@ -219,8 +220,8 @@ section{
 
 
 .color-interest{
-    background-color: #9EA3A3;
-    color: white;
+    background-color: #F2D7CC;
+    color: #484848;
 }
 
 .interest-1{
@@ -241,7 +242,7 @@ section{
 .interest-1 h2{
     font-size: 2.2em;
     padding-top: .5em;
-    padding-left: 3em;
+    padding-left: 1.5em;
     text-align: left;
 }
 
@@ -254,7 +255,7 @@ section{
 }
 
 .interest-2 li {
-    padding-left: 3em;
+    padding-left: 1.5em;
 }
 
 .interest-3 li{
@@ -298,7 +299,7 @@ section{
 }
 
 .lan-2{
-    padding-left: 4em;
+    padding-left: 3em;
 }
 
 /*Portfolio 1*/
@@ -309,13 +310,16 @@ section{
     height: min-content;
     background-color: white;
     color: #484848;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    width: 100%;
+
 }
 
 .prot1Text{
-    grid-column: 1/2;
+    grid-column: 2/4;
     text-align: left;
     margin: auto;
+    padding-left: 2em;
 }
 
 .prot1Text h1{
@@ -339,7 +343,7 @@ section{
 }
 
 .portImg{
-    grid-column: 2/3;
+    grid-column: 4/5;
     margin: auto;
 }
 
@@ -351,15 +355,16 @@ section{
     color: #484848;
     display: grid;
     height: min-content;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    width: 100%;
 }
 
 .port2Img{
-    grid-column: 1/2;
+    grid-column: 2/3;
 }
 
 .prot2Text{
-    grid-column: 2/3;
+    grid-column: 3/5;
     text-align: left;
     margin: auto;
 }
@@ -393,17 +398,17 @@ section{
 /*Portfolio 3*/
 #portfolio3{
     padding: 5em 1em;
-
     background-color: white;
     color: #484848;
     display: grid;
     height: min-content;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    width: 100%;
 }
 
 .port3Text{
     text-align: left;
-    grid-column: 1/3;
+    grid-column: 2/4;
     margin-left: auto;
     margin-right: auto;
 }
@@ -429,7 +434,7 @@ section{
 }
 
 .port3Img{
-    grid-column: 2/3;
+    grid-column: 4/5;
     margin-left: auto;
     margin-right: auto;
 }
@@ -442,12 +447,13 @@ section{
     color: #484848;
     display: grid;
     height: min-content;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    width: 100%;
 }
 
 .port4Text{
     text-align: left;
-    grid-column: 1/3;
+    grid-column: 2/4;
     margin-left: auto;
     margin-right: auto;
 }
@@ -473,7 +479,7 @@ section{
 }
 
 .port4Img{
-    grid-column: 2/3;
+    grid-column: 4/5;
     margin-left: auto;
     margin-right: auto;
 }
@@ -494,15 +500,17 @@ section{
 
     display: grid;
     height: min-content;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    width: 100%;
 
 }
 
 .contactText{
-    grid-column: 1/2;
+    grid-column: 2/4;
     text-align: left;
     margin: 10px;
     padding-top: 2em;
+    padding-left: 1em;
     margin: auto;
 }
 
@@ -512,11 +520,11 @@ section{
 }
 
 
-.contactText p{
+.contactText h2{
     font-size: 1.3em;
     padding-top: .25em;;
     padding-bottom: .25em;
-    font-family: "Segoe UI","Mamelon", "Agency FB";
+    font-family: "Mamelon", "Agency FB", "Segoe UI";
     font-weight:500;
 }
 
@@ -526,7 +534,7 @@ section{
 }
 
 .contactImg{
-    grid-column: 2/3;
+    grid-column: 4/5;
 }
 
 .contactImg img{
@@ -572,14 +580,16 @@ footer{
 	clear: both;
     display: grid;
     height: min-content;
-    grid-template-columns: 1f;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    width: 100%;
 }
 
 #footerBox{
     background-color: #405A5B;
-    grid-column: 1/2;
+    grid-column: 1/6;
     height: 95px;
     margin-bottom: 1.5em;
+    width: 100%;
 }
 
 footer p {
@@ -589,4 +599,536 @@ footer p {
 	padding-bottom: 1.5em;
     color: white;
     font-size: 1.3em;
+}
+
+/*code for responsive screen*/
+@media screen and (max-width: 1240px) {
+    #ahLogo{
+        width: 300px;
+        height: 300px;
+        margin-top: 150px;
+    }
+
+    .introductionBox{
+        margin-top: 2em;
+    }
+
+    .introductionBox h2 {
+    font-size: 1.8em;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    text-align: left;
+    }
+
+    .introductionBox p{
+    font-size: 1.2em;
+    padding-left: 3em;
+    }
+    .skill-1 h2{
+        font-size: 1.8em;
+        padding-left: 1em;
+    }
+    .skill-2 li, .skill-3 li{
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+    .interest-1 h2{
+        font-size: 1.8em;
+    }
+    .interest-2, .interest-3{
+       font-size: 1em;
+    }
+    .interest-2 li {
+        padding-left: 1.2em;
+    }
+
+    .lan-1 h2{
+        font-size: 1.8em;
+        padding-left: 1.2em;
+    }
+
+    .lan-3 li, .lan-2 li, .lan-4 li{
+        font-size: 1.2em;
+        text-align: left;
+    }
+    
+    .lan-2{
+        padding-left: 1.7em;
+    }
+
+    #portfolio1{
+        padding-left: 1.2em;
+    }
+
+    .prot1Text h1, .prot2Text h1, 
+    .port3Text h1, .port4Text h1,
+    .contactText h1{
+        font-size: 2.2em;
+    }
+    
+    .prot1Text h2, .prot2Text h2, 
+    .port3Text h2, .port4Text h2{
+        font-size: 1.5em;
+    }
+    
+    .prot1Text p, .prot2Text p, 
+    .port3Text p, .port4Text p{
+        font-size: 1em;
+    }
+    .prot2Text{
+        padding-right: 1em;
+    }
+
+    .port3Text{
+        margin-top: 1em;
+    }
+    .port4Text{
+        margin-left: 2em;
+    }
+
+    .phoneImg img{
+        width: 320px;
+        height: 620px;
+    }
+
+    .desktopImg img{
+        width: 450px;
+        height: 250px;
+    }
+    .contactText h2{
+        font-size: 1.2em;
+    }
+    .contactText{
+        padding-left: 2em;
+    }
+    .contactImg img{
+        width: 300px;
+        height: 300px;
+        margin-top: 2em;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    #ahLogo{
+        width: 280px;
+        height: 280px;
+        margin-top: 170px;
+    }
+
+    #greyBoxForHome h1{
+        font-size: 2.2em;
+    }
+    
+    #greyBoxForHome h2{
+        font-size: 2em;
+    }
+
+    .introductionBox p{
+        font-size: 1.1em;
+    }
+
+    .skill-1 h2{
+        font-size: 1.7em;
+    }
+    .skill-2 li, .skill-3 li{
+        font-size: 1.1em;
+        margin-top: 15px;
+    }
+
+    .interest-1 h2{
+        font-size: 1.7em;
+    }
+    .interest-2, .interest-3{
+       font-size: .9em;
+    }
+
+    .lan-1 h2{
+        font-size: 1.7em;
+    }
+
+    .prot1Text h1, .prot2Text h1, 
+    .port3Text h1, .port4Text h1,
+    .contactText h1{
+        font-size: 2.2em;
+    }
+    
+    .prot1Text h2, .prot2Text h2, 
+    .port3Text h2, .port4Text h2{
+        font-size: 1.2em;
+    }
+ 
+    .prot1Text p, .prot2Text p, 
+    .port3Text p, .port4Text p{
+        font-size: 1em;
+    }
+
+    .port3Img{
+        grid-column: 4/5;
+    }
+
+    .port3Text, .port4Text{
+        grid-column: 2/5;
+    }
+
+    .phoneImg img{
+        width: 300px;
+        height: 600px;
+    }
+
+    .desktopImg img{
+        width: 420px;
+        height: 220px;
+    }
+    .contactText h2{
+        font-size: 1.1em;
+    }
+
+    .contactImg img{
+        width: 280px;
+        height: 280px;
+    }
+    
+
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .contactText h2{
+        font-size: 1.1em;
+    }
+
+    .contactImg img{
+        width: 250px;
+        height: 250px;
+    }
+    .contactImg{
+        grid-column: 1/6;
+        margin: auto;
+    }
+    .contactText{
+        grid-column: 1/6;
+        padding: auto;
+        margin: auto;
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .navigation li a, header a{
+        font-size: 1.2em;
+        margin-right: 30px;
+    }
+
+    .introductionBox p{
+        font-size: 1em;
+    }
+    .skill-1{
+        grid-column: 1 / 2;
+    }
+
+    .skill-2{
+        grid-column: 2/4;
+    }
+    
+    .skill-3{
+        grid-column: 4/6;
+
+    }
+    .skill-1 h2{
+        font-size: 1.5em;
+    }
+    .skill-2 li, .skill-3 li{
+        font-size: 1em;
+        margin-top: 15px;
+    }
+
+    .interest-1 h2{
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .interest-2, .interest-3{
+       font-size: .7em;
+    }
+
+    .lan-1 h2{
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+
+    .lan-3 li, .lan-2 li, .lan-4 li{
+        font-size: 1em;
+    }
+
+    .prot1Text{
+        grid-column: 1/5;
+        padding-left: .5em;
+    }
+    
+    .portImg{
+        grid-column: 2/5;
+        margin: auto;
+    }
+
+    .port2Img{
+        grid-column: 1/2;
+    }
+
+    .prot2Text{
+        grid-column: 2/5;
+    }
+    
+    .prot1Text h1, .prot2Text h1, 
+    .port3Text h1, .port4Text h1,
+    .contactText h1{
+        font-size: 1.5em;
+    }
+    
+    .prot1Text h2, .prot2Text h2, 
+    .port3Text h2, .port4Text h2{
+        font-size: 1em;
+    }
+ 
+    .prot1Text p, .prot2Text p, 
+    .port3Text p, .port4Text p{
+        font-size: .75em;
+    }
+
+    .port3Img{
+        grid-column: 4/5;
+    }
+
+    .port3Text, .port4Text{
+        grid-column: 2/5;
+        margin-bottom: .5em;
+    }
+
+    .phoneImg img{
+        width: 280px;
+        height: 520px;
+    }
+
+    .desktopImg img{
+        width: 380px;
+        height: 200px;
+    }
+
+    .contactText h2{
+        font-size: 1.1em;
+    }
+
+    .contactImg img{
+        width: 250px;
+        height: 250px;
+    }
+    .contactImg{
+        grid-column: 1/6;
+        margin: auto;
+    }
+    .contactText{
+        grid-column: 1/6;
+        padding: auto;
+        margin: auto;
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    .navigation li a, header a{
+        font-size: 1em;
+    }
+
+    header{
+        display: block;
+        justify-content:left;
+        width: 90%;
+    }
+
+    .introductionBox {
+        grid-column: 1/6;
+    }
+
+    .introductionBox p{
+        font-size: .75em;
+    }
+    .skill-1{
+        grid-column: 1 / 6;
+        grid-row: 2/3;
+    }
+
+    .skill-2{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    .skill-3{
+        grid-column: 3/5;
+        grid-row: 3/4;
+
+
+    }
+
+    .interest-1 h2{
+        padding-top: .4em;
+        padding-bottom: .5em;
+    }
+
+
+    .interest-1{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    .interest-2{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+    
+    .interest-3{
+        grid-column: 4/6;
+        grid-row: 4/5;
+    }
+
+    .lan-1{
+        grid-column: 1/6;
+        grid-row: 5/6;
+    }
+    .lan-2{
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+    .lan-3{
+        grid-column: 3/4;
+        grid-row: 6/7;
+    }
+    .lan-4{
+        grid-column: 4/6;
+        grid-row: 6/7;
+    }
+
+    .lan-1 h2{
+        font-size: 1.5em;
+        padding-top: .1em;
+        padding-bottom: .5em;
+
+    }
+
+    .prot1Text{
+        grid-column: 1/6;
+        padding-left: .5em;
+    }
+    
+    .portImg{
+        grid-column: 1/6;
+        margin: auto;
+    }
+
+    .port2Img{
+        grid-column: 1/6;
+    }
+
+    .prot2Text{
+        grid-column: 1/6;
+    }
+    
+    .prot1Text h1, .prot2Text h1, 
+    .port3Text h1, .port4Text h1,
+    .contactText h1{
+        font-size: 1.5em;
+    }
+    
+    .prot1Text h2, .prot2Text h2, 
+    .port3Text h2, .port4Text h2{
+        font-size: 1em;
+    }
+ 
+    .prot1Text p, .prot2Text p, 
+    .port3Text p, .port4Text p{
+        font-size: .75em;
+    }
+
+    .port3Img{
+        grid-column: 4/5;
+    }
+
+    .port3Text, .port4Text{
+        grid-column: 2/5;
+        margin-bottom: .5em;
+    }
+
+    .phoneImg img{
+        width: 280px;
+        height: 520px;
+    }
+
+    .desktopImg img{
+        width: 380px;
+        height: 200px;
+    }
+
+    .contactText h2{
+        font-size: 1.1em;
+    }
+
+    .contactImg img{
+        width: 250px;
+        height: 250px;
+    }
+    .contactImg{
+        grid-column: 1/6;
+        margin: auto;
+    }
+    .contactText{
+        grid-column: 1/6;
+        padding: auto;
+        margin: auto;
+    }
+
+    .contactText figure{
+        display: inline-block;
+        padding: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    #ahLogo{
+        width: 200px;
+        height: 200px;
+    }
+
+    .phoneImg img{
+        width: 250px;
+        height: 450px;
+    }
+
+    .desktopImg img{
+        width: 300px;
+        height: 160px;
+    }
+
+    .contactText h2{
+        font-size: 1em;
+    }
+
+    .contactImg img{
+        width: 250px;
+        height: 250px;
+    }
+    .contactImg{
+        grid-column: 1/6;
+        margin: auto;
+    }
+    .contactText{
+        grid-column: 1/6;
+        padding: auto;
+        margin: auto;
+    }
+
+    .contactText figure{
+        display: inline-block;
+        padding: 10px;
+    }
+
 }

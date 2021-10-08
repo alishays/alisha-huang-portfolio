@@ -78,7 +78,7 @@ header img {
 .navigation{
     display: flex;
     overflow: hidden;
-    padding-right: 30px;
+    padding-right: 50px;
     justify-content: flex-end;
 }
 

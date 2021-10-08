@@ -61,6 +61,7 @@ header{
     align-items: center;
     background-color: white;
     width: 100%;
+    z-index: 999;
 }
 
 #ahHome{
@@ -71,12 +72,14 @@ header img {
     float: left;
     margin-right: 0.5em;
     display: flex;
+    justify-content: flex-start;
 }
 
 .navigation{
     display: flex;
     overflow: hidden;
     padding-right: 30px;
+    justify-content: flex-end;
 }
 
 .navigation li{

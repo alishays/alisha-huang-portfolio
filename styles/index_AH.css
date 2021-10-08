@@ -398,14 +398,11 @@ header img {
     display: grid;
     height: min-content;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-    width: 100%;
 }
 
 .port3Text{
     text-align: left;
     grid-column: 2/4;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .port3Text h1{
@@ -430,8 +427,6 @@ header img {
 
 .port3Img{
     grid-column: 4/5;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /*Portfolio 4*/
@@ -443,14 +438,11 @@ header img {
     display: grid;
     height: min-content;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-    width: 100%;
 }
 
 .port4Text{
     text-align: left;
     grid-column: 2/4;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .port4Text h1{
@@ -475,8 +467,6 @@ header img {
 
 .port4Img{
     grid-column: 4/5;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .desktopImg img{
@@ -675,10 +665,10 @@ footer p {
     }
 
     .port3Text{
-        margin-top: 1em;
+        padding-top: 1em;
     }
     .port4Text{
-        margin-left: 2em;
+        padding-left: 2em;
     }
 
     .phoneImg img{
@@ -809,10 +799,10 @@ footer p {
 
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .navigation li a, header a{
-        font-size: 1.2em;
-        margin-right: 30px;
+        font-size: 1.2em; 
+        padding-right: 10px;       
     }
 
     .introductionBox p{
@@ -931,6 +921,10 @@ footer p {
   @media screen and (max-width: 500px) {
     .navigation li a, header a{
         font-size: 1em;
+    }
+
+    .navigation{
+        padding-right: 10px;
     }
 
     header{
@@ -1060,6 +1054,9 @@ footer p {
         grid-column: 2/5;
         margin-bottom: .5em;
     }
+    .port4Text{
+        padding-left: 1em;
+    }
 
     .phoneImg img{
         width: 280px;
@@ -1102,6 +1099,28 @@ footer p {
         width: 200px;
         height: 200px;
     }
+    #greyBoxForHome h1{
+        font-size: 2em;
+    }
+
+    #greyBoxForHome h2{
+        font-size: 1.8em;
+    }
+
+    .skill-2 li, .skill-3 li,
+    .lan-3 li, .lan-2 li, .lan-4 li{
+        font-size: 0.8em;
+    }
+
+    .interest-1 h2,.lan-1 h2{
+        padding-left: .5em;
+        font-size: 1.2em;
+    }
+
+    .interest-3 li, .interest-2 li{
+        font-size: 1em;
+    }
+    
 
     .phoneImg img{
         width: 250px;

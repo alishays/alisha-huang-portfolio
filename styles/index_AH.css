@@ -938,6 +938,12 @@ footer p {
 
     .introductionBox {
         grid-column: 1/6;
+        margin-top: 3em;
+    }
+
+    .introductionBox h2{
+        font-size: 1.5em;
+        padding-top: 3em;
     }
 
     .introductionBox p{
@@ -956,8 +962,6 @@ footer p {
     .skill-3{
         grid-column: 3/5;
         grid-row: 3/4;
-
-
     }
 
     .interest-1 h2{
@@ -1002,12 +1006,18 @@ footer p {
         font-size: 1.5em;
         padding-top: .1em;
         padding-bottom: .5em;
-
     }
 
+    .interest-3 , .interest-2, 
+    .lan-3, .lan-2, .lan-4,
+    .skill-2, .skill-3{
+        padding-bottom: .5em;
+    }
+    
     .prot1Text{
         grid-column: 1/6;
         padding-left: .5em;
+        padding-top: 1em;
     }
     
     .portImg{

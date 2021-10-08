@@ -3,6 +3,7 @@
  * 
  * Revision History
  *      Alisha Huang, 2021,09,17: Created
+        Alisha Huang, 2021,10,04: Modified
 -->
 
 <!DOCTYPE html>
@@ -14,38 +15,47 @@
     <meta name="keyword" content="Portfolio, UX designer, UI designer, ALisha Huang"></meta>
     <link rel="Alisha Huang icon" type="image/ico" href="images/AHfavicon.ico">
     <link rel="stylesheet" href="./styles/index_AH.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./javascripts/javascript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
   </head>
   <body>
 
       <!--Cover Page-->
-    <section id="coverPage">
+    <div class="contanier">
       <div class="headerContainer">
         <header>
           <a href="#">
-            <img src="images/AHLogo.png" alt="AH logo" width="40" height="40">
-            <p id="ahHome">alishahuang.</p>
+            <img src="images/AHLogo.png" alt="AH logo link to main page" width="40" height="40">
+            <h4 id="ahHome">alishahuang.</h4>
           </a>
-            
-          <ul id="ahMenu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio1">Portfolio</a></li>
-            <li><a href="#contactPage">Contact</a></li>
-          </ul>
+          <nav>
+            <ul class="navigation" id="navBar">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#portfolio1" class="nav-link">Portfolio</a></li>
+              <li><a href="#contactPage" class="nav-link">Contact</a></li>
+              <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+              </button>
+            </ul>
+          </nav>
+          
 
         </header>
       </div>
-      
-      <div class="coverPageContainer">
+      <section class="coverPageContainer" id="coverPage">
+
         <img id="ahLogo" onmouseover="this.src='images/profileWithQuote.png'"
              onmouseout="this.src='images/AHLogo-withWhiteDot.png'"
-            src="images/AHLogo-withWhiteDot.png" alt="AH logo">
+            src="images/AHLogo-withWhiteDot.png" alt="AH logo which will hover change to another image">
         <div id="greyBoxForHome">
           <h1>Alisha Huang</h1>
           <h2>UX/UI Designer</h2>
         </div>
-      </div>
-    </section>    
-
+    </section>   
+ 
     <!--About Page-->
     <section id="about">
       <div class="introductionBox">
@@ -141,14 +151,14 @@
       </div>
     
       <div class="prot1Img phoneImg">
-        <img src="images/myDoctor-homepage.png" alt="My Doctor App image">
+        <img src="images/myDoctor-homepage.png" alt="My Doctor App image for portfolio 1">
       </div>
     </section>
 
     <!--Portfolio2 WhatsApp Redesign-->
     <section id="portfolio2">
       <div class="port2Img phoneImg">
-        <img src="images/whatsApp-loginPage.png" alt="WhatsApp Redesign image">
+        <img src="images/whatsApp-loginPage.png" alt="WhatsApp Redesign image for portfolio 2">
       </div>
       
       <div class="prot2Text">
@@ -157,8 +167,8 @@
         <h2>User Research & UI Design</h2>
         <p>
           A concept for redesigning WhatsApp. <br>
-          Especially redesign the function of Contact to <br>
-          make users can easily manage.<br>
+          Especially redesign the function of <br>
+          Contact to make users can easily manage.<br>
         </p>
       </div>
     </section>
@@ -166,7 +176,7 @@
     <!--Portfolio3 Ember Website-->
     <section id="portfolio3">
       <div class="port3Img desktopImg">
-        <img src="images/ember-mainpage.png" alt="Ember Website image">
+        <img src="images/ember-mainpage.png" alt="Ember Website image for portfolio 3">
       </div>
       
       <div class="port3Text">
@@ -198,18 +208,24 @@
       </div>
 
       <div class="port4Img desktopImg">
-        <img src="images/college-homepgae.png" alt="Elliot Lake College Website image">
+        <img src="images/college-homepgae.png" alt="Elliot Lake College Website image for portfolio 4">
       </div>
       
     </section>
 
     <!--Contact page-->
     <section id="contactPage">
+
+      <div class="contactImg">
+        <img id="AHCircle" src="images/name-circle.png" onmouseover="this.src='images/porfileWithUXUI.png'"
+        onmouseout="this.src='images/name-circle-1.png'" alt="A circle with Alisha Huang to decorated">
+      </div>
+      
       <div class="contactText">
         <h1>Contact Me</h1>
-        <p>You can find me here:</p>
-        <p>Email: ahuang3358@conestgoac.on.ca</p>
-        <p>Please feel free to reach out to me.</p>
+        <h2>You can find me here:</h2>
+        <h2>Email: ahuang3358@conestgoac.on.ca</h2>
+        <h2>Please feel free to reach out to me.</h2>
         <figure>
           <a href="https://www.linkedin.com/in/alisha-y-huang">
           <img src="images/contact-icon-grey/Icon awesome-linkedin.png" alt="linkedin_contact_link" width="50" height="50">
@@ -230,11 +246,6 @@
         
       </div>
       
-      <div class="contactImg">
-        <img id="AHCircle" src="images/name-circle.png" onmouseover="this.src='images/porfileWithUXUI.png'"
-        onmouseout="this.src='images/name-circle-1.png'" alt="A circle with Alisha Huang to decorated">
-      </div>
-      
 
     </section>
 
@@ -244,6 +255,8 @@
         <p>&copy; Alisha Huang 2021</p>
       </div>
     </footer>
+    </div>
+      
 
   </body>
 </html>

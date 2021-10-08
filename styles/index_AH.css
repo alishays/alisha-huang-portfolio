@@ -95,14 +95,6 @@ header img {
     font-size: large;
 }
 
-.burger-menu {
-    color: var(--primary-color);
-    font-size: 2rem;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
-  }
 
 .navigation li a, header a{
     color: #484848;

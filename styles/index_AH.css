@@ -6,37 +6,8 @@
         Alisha Huang, 2021,10,04: Modified
  */
 
-
-/*
-Font download from <a href="https://allfont.net/download/agency-fb/">all font.net</a>is licensed by CC BY 3.0
-Free for Personal Use
-*/
-@font-face {
-    font-family: Agency FB;
-    src: local("Agency FB"),
-        url(../fonts/AGENCYB.TTF);
-}
-
-/*
-Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0.
-Free for Personal Use
-*/
-@font-face {font-family: Segoe Script; 
-    src: local("Segoe Script"); 
-    src: url(../fonts/Segoe_Script.ttf);
-}
-
-/*
-Font download from <a href="https://freefontsfamily.com/segoe-ui-font-free/">free fonts family</a>is licensed by CC BY 3.0
-Free for Personal Use
-*/
-@font-face {font-family: Segoe UI; 
-    src: local("Segoe UI"); 
-    src: url(../fonts/SEGOEUI.TTF);
-}
-
 html{
-	scroll-behavior: smooth;
+	scroll-behavior:smooth;
 }
 
 body{
@@ -95,7 +66,8 @@ header img {
     -webkit-box-shadow: 0 0 30px #DFC5AE;
     box-shadow: 0 0 30px #DFC5AE;
     border-radius: 50%;
-    font-size: large;
+    color:#1E5372;
+    font-size: 110%;
 }
 
 
@@ -298,6 +270,21 @@ header img {
 }
 
 /*Portfolio 1*/
+
+.project-link{
+    color: #484848;
+}
+
+.project-link:hover{
+    color: #022E3F;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.project-link::after{
+    color: #484848;
+}
+
 #portfolio1{
     padding-top: 6em;
     padding-bottom: 2em;
@@ -337,7 +324,7 @@ header img {
     font-weight:500;
 }
 
-.portImg{
+.port1Img{
     grid-column: 4/5;
     margin: auto;
 }
@@ -522,10 +509,11 @@ header img {
     grid-column: 4/5;
 }
 
-.contactImg img{
+#AHCircle{
     border-radius: 50%;
     width: 400px;
     height: 400px;
+    margin-left: 50px;
 }
 
 /* hover effect*/
@@ -686,7 +674,7 @@ footer p {
     .contactText{
         padding-left: 2em;
     }
-    .contactImg img{
+    #AHCircle{
         width: 300px;
         height: 300px;
         margin-top: 2em;
@@ -769,7 +757,7 @@ footer p {
         font-size: 1.1em;
     }
 
-    .contactImg img{
+    #AHCircle{
         width: 280px;
         height: 280px;
     }
@@ -783,7 +771,7 @@ footer p {
         font-size: 1.1em;
     }
 
-    .contactImg img{
+    #AHCircle{
         width: 250px;
         height: 250px;
     }
@@ -902,7 +890,7 @@ footer p {
         font-size: 1.1em;
     }
 
-    .contactImg img{
+    #AHCircle{
         width: 250px;
         height: 250px;
     }
@@ -1072,7 +1060,7 @@ footer p {
         font-size: 1.1em;
     }
 
-    .contactImg img{
+    #AHCircle{
         width: 250px;
         height: 250px;
     }
@@ -1136,7 +1124,7 @@ footer p {
         font-size: 1em;
     }
 
-    .contactImg img{
+    #AHCircle{
         width: 250px;
         height: 250px;
     }

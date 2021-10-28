@@ -1,0 +1,29 @@
+/*
+Font download from <a href="https://allfont.net/download/agency-fb/">all font.net</a>is licensed by CC BY 3.0
+Free for Personal Use
+*/
+@font-face {
+    font-family: Agency FB;
+    src: local("Agency FB"),
+        url(../fonts/AGENCYB.TTF);
+}
+
+/*
+Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0.
+Free for Personal Use
+*/
+@font-face {font-family: Segoe Script; 
+    src: local("Segoe Script"); 
+    src: url(../fonts/Segoe_Script.ttf);
+}
+
+/*
+Font download from <a href="https://freefontsfamily.com/segoe-ui-font-free/">free fonts family</a>is licensed by CC BY 3.0
+Free for Personal Use
+*/
+@font-face {font-family: Segoe UI; 
+    src: local("Segoe UI"); 
+    src: url(../fonts/SEGOEUI.TTF);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@300&display=swap");

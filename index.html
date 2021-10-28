@@ -14,12 +14,14 @@
     <title>Alisha Huang's Portfolio</title>
     <meta name="keyword" content="Portfolio, UX designer, UI designer, ALisha Huang"></meta>
     <link rel="Alisha Huang icon" type="image/ico" href="images/AHfavicon.ico">
+    <link rel="stylesheet" href="./styles/fonts.css"/>
     <link rel="stylesheet" href="./styles/index_AH.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./javascripts/javascript.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+
   </head>
   <body>
 
@@ -44,26 +46,47 @@
       </div>
       <section class="coverPageContainer" id="coverPage">
 
-        <img id="ahLogo" onmouseover="this.src='images/profileWithQuote.png'"
+        <img id="ahLogo" data-aos="fade-down" 
+        data-aos-once="false" data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+             onmouseover="this.src='images/profileWithQuote.png'"
              onmouseout="this.src='images/AHLogo-withWhiteDot.png'"
             src="images/AHLogo-withWhiteDot.png" alt="AH logo which will hover change to another image">
         <div id="greyBoxForHome">
-          <h1>Alisha Huang</h1>
-          <h2>UX/UI Designer</h2>
+          <h1 data-aos="fade-down" 
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false">Alisha Huang</h1>
+
+          <h2 data-aos="fade-down" 
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false">UX/UI Designer</h2>
         </div>
     </section>   
  
     <!--About Page-->
     <section id="about">
       <div class="introductionBox">
-        <h2>Hi, I'm Alisha Huang</h2>
-        <p>
-          I am a current IT innovation design student at Conestoga College,
-          and most of what I learned is how to become a UX/UI designer.
-          Therefore, I have worked on some UX group projects with classmates. 
-          Also, I have some UX and UI projects that can present my UX/UI design skill and what I learned at school. 
-          Hope you enjoy my portfolio.
-        </p>
+        
+          <h2 data-aos="fade-down" 
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false">Hi, I'm Alisha Huang</h2>
+          <p>
+            I am a current IT innovation design student at Conestoga College,
+            and most of what I learned is how to become a UX/UI designer.
+            Therefore, I have worked on some UX group projects with classmates. 
+            Also, I have some UX and UI projects that can present my UX/UI design skill and what I learned at school. 
+            Hope you enjoy my portfolio.
+          </p>
+        
       </div>
 
       <div class="skill-1 backColorWhite">
@@ -71,7 +94,11 @@
       </div>
 
       <div class="skill-2 backColorWhite">
-        <ul id="skill1">
+        <ul data-aos="fade-down" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false" id="skill1">
           <li>Graphic Design</li>
           <li>Functional Programming</li>
           <li>User Research</li>
@@ -80,7 +107,11 @@
         </ul>
       </div>
       <div class="skill-3 backColorWhite">
-        <ul id="skill2">
+        <ul data-aos="fade-down" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"  id="skill2">
           <li>Adobe XD</li>
           <li>Adobe Illustrator</li>
           <li>Adobe Photoshop</li>
@@ -94,38 +125,58 @@
       </div>
 
       <div class="interest-2 color-interest">
-        <ul id="interest1">
+        <ul data-aos="fade-down" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"  id="interest1">
           <li>Music</li>
           <li>Photography</li>
         </ul>
       </div>
       
       <div class="interest-3 color-interest">
-        <ul id="interest1">
+        <ul data-aos="fade-down" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"  id="interest1">
           <li>Travel</li>
           <li>Reading</li>
         </ul>
       </div>
       
       <div class="lan-1 color-Lan">
-        <h2>Programming Language</h2>
+        <h2 class="show-on-scroll">Programming Language</h2>
       </div>
       <div class="lan-2 color-Lan">
-        <ul>
+        <ul data-aos="fade-down" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false" >
           <li>HTML5&CSS</li>
           <li>JavaScript</li>
         </ul>
       </div>
       
       <div class="lan-3 color-Lan">
-        <ul>
+        <ul data-aos="fade-down" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false" >
           <li>C#</li>
           <li>Java</li>
         </ul>
       </div>
      
       <div class="lan-4 color-Lan">
-        <ul>
+        <ul data-aos="fade-down" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false">
           <li>Node.js</li>
         </ul>
       </div>
@@ -135,77 +186,102 @@
     <!--Portfolio1 My Doctor App-->
     <section id="portfolio1">
       <div class="prot1Text">
-        <h1>My Doctor App</h1>
+        <h1 data-aos="fade-left" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false">My Doctor App</h1>
         <h2>UX Group Project</h2>
         <h2>User Research & UI Design</h2>
-        <p>
+        <p data-aos="fade-left" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false">
           A medication application that helps people <br>
           to get medical resources online, <br>
           such as book appointments from online doctors,<br>
           chat with AI, arrange appointments <br>
           and medical records, and call emergency.<br>
-        </p>  
+        </p>
+        <p><a href="./pages/myDoctorApp.html" class="project-link">View Project My Doctor App &rarr;</a></p>  
       </div>
     
-      <div class="prot1Img phoneImg">
-        <img src="images/myDoctor-homepage.png" alt="My Doctor App image for portfolio 1">
+      <div data-aos="fade-left" 
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false" class="prot1Img phoneImg">
+        <img onmouseover="this.src='images/mydoctor-2.png'" 
+        onmouseout="this.src='images/myDoctor-homepage.png'"
+        src="images/myDoctor-homepage.png" alt="My Doctor App image for portfolio 1">
       </div>
     </section>
 
     <!--Portfolio2 WhatsApp Redesign-->
-    <section id="portfolio2">
-      <div class="port2Img phoneImg">
-        <img src="images/whatsApp-loginPage.png" alt="WhatsApp Redesign image for portfolio 2">
+    <section  id="portfolio2">
+      <div data-aos="fade-right" 
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"  class="port2Img phoneImg">
+        <img onmouseover="this.src='images/whatApp-2.png'" 
+        onmouseout="this.src='images/whatsApp-loginPage.png'"
+        src="images/whatsApp-loginPage.png" alt="WhatsApp Redesign image for portfolio 2">
       </div>
       
       <div class="prot2Text">
-        <h1>WhatsApp Redesign</h1>
+        <h1 data-aos="fade-right" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false" >WhatsApp Redesign</h1>
         <h2>UX Group Project</h2>
         <h2>User Research & UI Design</h2>
-        <p>
+        <p data-aos="fade-right" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false" >
           A concept for redesigning WhatsApp. <br>
           Especially redesign the function of <br>
           Contact to make users can easily manage.<br>
         </p>
+        <p><a href="./pages/whatsAppRedesign.html" class="project-link">View Project WhatsApp Redesign &rarr;</a></p>
       </div>
     </section>
 
-    <!--Portfolio3 Ember Website-->
-    <section id="portfolio3">
-      <div class="port3Img desktopImg">
-        <img src="images/ember-mainpage.png" alt="Ember Website image for portfolio 3">
-      </div>
-      
-      <div class="port3Text">
-        <h1>Ember Website</h1>
-        <h2>UX Group Project</h2>
-        <h2>User Research & UI Design</h2>
-        <p>
-          Ember is a social media application that allows registered users to <br>
-          submit posts online in various “circles” which represent<br>
-          dedicated areas to discuss specific interests.
-        </p>  
-      </div>
-      
-      
-    </section>
-
-    <!--Portfolio 4 College Website-->
-    <section id="portfolio4">
+    <!--Portfolio 3 College Website-->
+    <section  id="portfolio4">
       
       <div class="port4Text">
-        <h1>Elliot Lake College Website</h1>
+        <h1 data-aos="fade-down" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false" >Elliot Lake College Website</h1>
         <h2>UX Project</h2>
         <h2>User Research & UI Design</h2>
-        <p>
+        <p data-aos="fade-down" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false" >
           Elliot Lake College is a new college <br>
           that wants to build up a website for <br>
           attracting students.
         </p>
+        <p><a href="./pages/elcWebsote.html" class="project-link">View Project ELC Website &rarr;</a></p>
       </div>
 
-      <div class="port4Img desktopImg">
-        <img src="images/college-homepgae.png" alt="Elliot Lake College Website image for portfolio 4">
+      <div data-aos="fade-down" 
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"  class="port4Img desktopImg">
+        <img onmouseover="this.src='images/college-2.png'" 
+        onmouseout="this.src='images/college-homepgae.png'"
+        src="images/college-homepgae.png" alt="Elliot Lake College Website image for portfolio 4">
       </div>
       
     </section>
@@ -213,8 +289,12 @@
     <!--Contact page-->
     <section id="contactPage">
 
-      <div class="contactImg">
-        <img id="AHCircle" src="images/name-circle.png" onmouseover="this.src='images/porfileWithUXUI.png'"
+      <div>
+        <img data-aos="fade-up" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"   class="contactImg" id="AHCircle" src="images/name-circle.png" onmouseover="this.src='images/porfileWithUXUI.png'"
         onmouseout="this.src='images/name-circle-1.png'" alt="A circle with Alisha Huang to decorated">
       </div>
       
@@ -223,19 +303,31 @@
         <h2>You can find me here:</h2>
         <h2>Email: ahuang3358@conestgoac.on.ca</h2>
         <h2>Please feel free to reach out to me.</h2>
-        <figure>
+        <figure data-aos="fade-up" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"  >
           <a href="https://www.linkedin.com/in/alisha-y-huang">
           <img src="images/contact-icon-grey/Icon awesome-linkedin.png" alt="linkedin_contact_link" width="50" height="50">
           </a>
           <figcaption>My Linkedin</figcaption>
         </figure>
-        <figure><a href="https://github.com/alishays">
+        <figure data-aos="fade-up" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"><a href="https://github.com/alishays">
           <img src="images/contact-icon-grey/Icon awesome-github-square.png" alt="github_contact_link" width="50" height="50">
           </a>
           <figcaption>My GitHub</figcaption>
         </figure>
 
-        <figure><a href="mailto:ahuang3358@conestgoac.on.ca">
+        <figure data-aos="fade-up" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false" ><a href="mailto:ahuang3358@conestgoac.on.ca">
           <img src="images/contact-icon-grey/Icon material-email.png" alt="email_contact_link" width="50" height="50">
           </a>
           <figcaption>Email Me</figcaption>
@@ -254,6 +346,9 @@
     </footer>
     </div>
       
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

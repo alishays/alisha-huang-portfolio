@@ -1,0 +1,621 @@
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: "Mamelon", "Agency FB","Segoe UI", "Helvetica Neue", Arial, sans-serif;	
+    font-size: 1em;
+    text-align: center;
+	  color: #484848;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+p, li{
+  font-family: "Segoe UI","Helvetica Neue", Arial, sans-serif;	
+  margin:1em;
+  color: #484848;
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li::before{
+  content: "\2022";
+  color: #3A728D;
+  font-weight: bold;
+  display: inline-block; 
+  list-style: inside;
+  width: 1em;
+}
+
+.wrap{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  grid-gap: 0px;
+  height: min-content;
+}
+
+
+/*Header*/
+.headerContainer{
+  grid-column: 1/7;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+#ahHome{
+  margin-left: 20px;
+  float: left;
+}
+
+.headerContainer img {
+  float: left;
+  margin-left: 20px;
+}
+
+.navigation{
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+.navigation li{
+  font-family: "Agency FB", "Mamelon", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  list-style: none;
+  margin: 10px;
+  transition: .5s;
+  text-transform: uppercase;
+}
+
+.navigation li::before{
+  color: white;
+}
+
+.navigation li:hover{
+  -moz-box-shadow: 0 0 30px #DFC5AE;
+  -webkit-box-shadow: 0 0 30px #DFC5AE;
+  box-shadow: 0 0 30px #DFC5AE;
+  border-radius: 50%;
+  color:#1E5372;
+  font-size: 110%;
+}
+
+
+.navigation li a, .headerContainer a{
+  color: #484848;
+  text-decoration: none;
+  font-size: 1.35em;
+  font-weight: bold;
+}
+
+/*go back link*/
+
+.goBackLink{
+  grid-column: 1/7;
+  grid-row: 2/3;
+  height: min-content;
+  text-align: left;
+  margin-left: 50px;
+  padding: 10PX;
+}
+
+.goBackLink a{
+  color: #484848
+}
+
+.goBackLink a::after{
+  color: #484848
+}
+
+.goBackLink a:hover{
+  color: #1E5372;
+  font-size: 105%;
+}
+
+/*Cover*/
+.cover{
+  background-color: #C3D6DB;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+  height: min-content;
+  align-items: center;
+}
+
+.coverText{
+  grid-column: 2/5;
+  padding: 20px;
+  text-align: left;
+}
+
+.coverText h1{
+  font-size: 3rem;
+}
+
+
+.coverText h2{
+  font-size: 1.5rem;
+}
+
+.coverText p{
+  margin-top: 10px;
+}
+
+.phoneImg{
+  grid-column: 5/7;
+}
+
+.cover img{
+  width: 180px;
+  height: auto;
+}
+
+/*Project overview*/
+.projectOverview{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 1fr;
+  grid-gap: 0px;
+  height: min-content;
+  margin: 40px ;
+  text-align: left;
+}
+
+.projectOverview .title{
+  grid-column: 1/7;
+  grid-row: 1/2;
+  height: min-content;
+}
+
+
+.projectOverview .challenge{
+  grid-column: 1/7;
+  grid-row: 2/3;
+}
+
+.projectOverview .designTeam{
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.projectOverview .timeline{
+  grid-column: 3/5;
+  grid-row: 3/4;
+}
+
+.projectOverview .myRole{
+  grid-column: 5/7;
+  grid-row: 3/4;
+}
+
+.projectOverview .technique{
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.projectOverview .process{
+  grid-column: 3/7;
+  grid-row: 4/5;
+}
+
+.process img{
+  margin: 20px;
+}
+
+h3{
+  color:#234A56;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.title h2{
+  background-color: #1E5372;
+  color: white;
+  border-radius: 38px;
+  text-align: center;
+  align-items: center;
+}
+
+/*User Research User Stories*/
+.userResearchAndStories{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 220px 300px 350px 1fr;
+  grid-gap: 0px;
+  height: min-content;
+  margin: 40px ;
+  text-align: left;
+}
+
+.userResearchAndStories .title{
+  grid-column: 1/7;
+  grid-row: 1/2;
+  height: min-content;
+}
+
+
+.userResearchAndStories .scenarios{
+  grid-column: 1/7;
+  grid-row: 2/3;
+}
+
+.userResearchAndStories .needs{
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+
+.userResearchAndStories .wants{
+  grid-column: 4/7;
+  grid-row: 3/4;
+}
+
+.userResearchAndStories .problems{
+  grid-column: 1/7;
+  grid-row: 4/5;
+}
+
+.userResearchAndStories .persona{
+  grid-column: 1/7;
+  grid-row: 5/6;
+}
+
+.persona{
+  text-align: center;
+}
+
+.persona h3{
+  text-align: left;
+}
+
+.userResearchAndStories .title h2{
+  background-color: #5C92AA;
+}
+
+/*user flow*/
+.userFlow{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-gap: 0px;
+  height: min-content;
+  margin: 40px ;
+  text-align: left;
+}
+
+.userFlow .title{
+  grid-column: 1/7;
+  grid-row: 1/2;
+}
+
+.userFlow .flow{
+  grid-column: 1/7;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.userFlow h3{text-align: left;}
+
+
+.userFlow .title h2{
+  background-color: #DDE7DC;
+  color:#484848;
+}
+
+/*Design solution*/
+.designSolution{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-gap: 0px;
+  height: min-content;
+  margin: 40px ;
+  text-align: left;
+}
+
+.designSolution .title{
+  grid-column: 1/7;
+  grid-row: 1/2;
+}
+
+.designSolution .solution{
+  grid-column: 1/7;
+  grid-row: 2/3;
+}
+
+.designSolution .title h2{
+  background-color: #C3D6DB;
+  color:#1E5372;
+}
+
+/*sketch*/
+
+.sketch{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 60px 1fr;
+  grid-gap: 0px;
+  height: min-content;
+  margin: 40px ;
+  text-align: left;
+  align-items: center;
+}
+
+.sketch .title{
+  grid-column: 1/7;
+  grid-row: 1/2;
+}
+
+.sketch .sketchesText{
+  grid-column: 1/7;
+  grid-row: 2/3;
+}
+
+.sketch .btnPrevSketch{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.sketch .sketch-container{
+  grid-column: 2/6;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.sketch .btnNextSketch{
+  grid-column: 6/7;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.sketch-container img{
+  width: 760px;
+}
+
+
+.sketch .title h2{
+  background-color: #FFD9AD;
+  color:#234A56;
+}
+
+/*wireframe and prototype*/
+.wireframAndPrototype{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 60px 1fr 210px 80px 1fr;
+  grid-gap: 0px;
+  height: min-content;
+  margin: 40px ;
+  text-align: left;
+  align-items: center;
+}
+
+
+.wireframAndPrototype .title{
+  grid-column: 1/7;
+  grid-row: 1/2;
+}
+
+.wireframAndPrototype .wireframeText{
+  grid-column: 1/7;
+  grid-row: 2/3;
+}
+
+.wireframAndPrototype .btnPrevWireframe{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.wireframAndPrototype .wireframe-container{
+  grid-column: 2/6;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.wireframAndPrototype .btnNextWireframe{
+  grid-column: 6/7;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.wireframAndPrototype .colour{
+  grid-column: 1/7;
+  grid-row: 4/5;
+  text-align: center;
+}
+
+.colour h3{
+  text-align: left;
+}
+
+.wireframAndPrototype .prototypeText{
+  grid-column: 1/7;
+  grid-row: 5/6;
+  text-align: left;
+}
+
+.wireframAndPrototype .prototype-container{
+  grid-column: 2/6;
+  grid-row: 6/7;
+  text-align: center;
+}
+
+.wireframAndPrototype .btnPrevPrototype{
+  grid-column: 1/2;
+  grid-row: 6/7;
+  text-align: center;
+}
+
+.wireframAndPrototype .btnNextPrototype{
+  grid-column: 6/7;
+  grid-row: 6/7;
+  text-align: center;
+}
+
+.wireframAndPrototype .title h2{
+  background-color: #F7D6BF;
+  color:#234A56;
+}
+
+.wireframe-container img{
+  width: 760px;
+}
+
+.prototype-container img{
+  width: 760px;
+}
+
+.colour img{
+  width: 760px;
+}
+
+/*footer*/
+.footer{
+    display: grid;
+    height: min-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#footerBox{
+    grid-column: 1/7;
+}
+
+.footer p {
+    font-family: "Mamelon", "Agency FB","Segoe UI", "Helvetica Neue", Arial, sans-serif;	
+    background-color: #405A5B;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+	  padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    color: white;
+    font-size: 1.3em;
+}
+
+/*links*/
+
+.links{
+  display: grid;
+    height: min-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.links .top{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.links .home{
+  grid-column: 4/5;
+  grid-row: 1/2;
+
+}
+
+.links img{
+  width: 130px;
+  height: 130px;
+  margin:50px
+}
+
+.links img:hover{
+  transform:scale(1.25);
+  transition: 0.6s ease;
+}
+
+/* sketches container */
+
+.slideSketches {display: none}
+
+/*wireframe*/
+.slideWireframe {display: none}
+
+
+/*prototype*/
+.slidePrototype {display: none}
+
+  
+/* Next & previous buttons*/
+.prev, .next {
+    cursor: pointer;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev img, .next img{
+  width: 80px;
+  height: 80px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: #FFD9AD;
+}
+
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* hover effect*/
+.phoneImg img:hover,
+.process img:hover,
+.persona img:hover,
+.next img:hover,
+.prev img:hover,
+.slideSketches img:hover,
+.slideWireframe img:hover,
+.colour img:hover,
+.slidePrototype img:hover{
+    opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+    transition: 2s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}

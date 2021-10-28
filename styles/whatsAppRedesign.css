@@ -631,3 +631,297 @@ h3{
 		opacity: 1;
 	}
 }
+
+
+@media screen and (max-width: 1200px) {
+  .process img,
+  .persona img,
+  .sketch-container img,
+  .wireframe-container img,
+  .prototype-container img,
+  .colour img,
+  .userResearch img
+  {
+     width: 600px;
+  }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+  .process img{
+    width: 450px;
+  }
+
+  .persona img,
+  .sketch-container img,
+  .wireframe-container img,
+  .prototype-container img,
+  .colour img,
+  .userResearch img
+  {
+     width: 550px;
+  }
+
+
+}
+
+@media screen and (max-width: 850px) {
+  
+  .marketAndUserResearch{
+    grid-template-rows: 80px 300px 180px 550px 1fr;
+  }
+
+  .persona img,
+  .sketch-container img,
+  .wireframe-container img,
+  .prototype-container img,
+  .colour img,
+  .userResearch img
+  {
+     width: 480px;
+  }
+
+  .prev img, .next img{
+    width: 50px;
+    height: 50px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+  
+  .process img{
+    width: 450px;
+  }
+  
+  .persona img,
+  .sketch-container img,
+  .wireframe-container img,
+  .prototype-container img,
+  .colour img,
+  .userResearch img
+  {
+     width: 480px;
+  }
+
+  .coverText{
+    grid-column: 1/5;
+  }
+
+  .projectOverview{
+    grid-template-rows: 80px 1fr 1fr 1fr 1fr;
+  }
+
+  .projectOverview .timeline{
+    grid-row: 3/4;
+    grid-column: 4/7;
+  }
+
+  .projectOverview .designTeam{
+    grid-row: 3/4;
+    grid-column: 1/4; 
+  }
+
+  .projectOverview .myRole{
+    grid-row: 4/5;
+    grid-column: 1/4; 
+  }
+
+  .projectOverview .technique{
+    grid-row: 4/5;
+    grid-column: 4/7;
+  }
+
+  .projectOverview .process{
+    grid-row: 5/6;
+    grid-column: 1/7;
+  }
+
+  .marketAndUserResearch{
+    grid-template-rows: 80px 350px 180px 620px 1fr;
+  }
+
+
+  .sketch{
+    grid-template-rows: 80px 60px 1fr 60px;
+  }
+
+  .sketch .sketch-container{
+    grid-column: 1/7;
+  }
+
+  .sketch .btnNextSketch{
+    grid-column: 4/5;
+    grid-row: 4/5;
+  }
+
+  
+  .sketch .btnPrevSketch{
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+
+  .wireframAndPrototype{
+    grid-template-rows: 80px 60px 1fr 60px 210px 80px 1fr 60px;
+  }
+
+  .wireframAndPrototype .wireframe-container{
+    grid-column: 1/7;
+    grid-row: 3/4;
+  }
+
+  .wireframAndPrototype .btnNextWireframe{
+    grid-column: 4/5;
+    grid-row: 4/5;
+  }
+  .wireframAndPrototype .btnPrevWireframe{
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+
+  .wireframAndPrototype .colour{
+    grid-row: 5/6;
+  }
+
+  .wireframAndPrototype .prototypeText{
+    grid-row: 6/7;
+  }
+  .wireframAndPrototype .prototype-container{
+    grid-column: 1/7;
+    grid-row: 7/8;
+  }
+
+  .wireframAndPrototype .btnNextPrototype{
+    grid-column: 4/5;
+    grid-row:8/9;
+  }
+  .wireframAndPrototype .btnPrevPrototype{
+    grid-column: 3/4;
+    grid-row: 8/9;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  p, li{
+    font-size: 0.75em;;
+  }
+
+  .marketAndUserResearch{
+    grid-template-rows: 80px 250px 150px 500px 1fr;
+  }
+
+
+  .cover img{
+    width:150px;
+  }
+
+  .coverText h1{
+    font-size: 2.2rem;
+  }
+
+  .coverText h2{
+    font-size: 1rem;
+  }
+  .process img{
+    width: 350px;
+  }
+  .persona img,
+  .sketch-container img,
+  .wireframe-container img,
+  .prototype-container img,
+  .colour img,
+  .userResearch img
+
+  {
+     width: 400px;
+  }
+
+  .prev img, .next img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .links img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cover img{
+    width:100px;
+  }
+
+  .marketAndUserResearch{
+    grid-template-rows: 80px 300px 130px 550px 1fr;
+  }
+  
+  .process img{
+    width: 300px;
+  }
+
+  .userResearch img,
+  .persona img,
+  .sketch-container img,
+  .wireframe-container img,
+  .prototype-container img
+  {
+     width: 300px;
+  }
+
+  .colour img{
+    width: 320px;
+ }
+
+  .links img{
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  
+  .marketAndUserResearch{
+    grid-template-rows: 80px 450px 130px 750px 1fr;
+  }
+
+  .coverText h1{
+    font-size: 1.75rem;
+  }
+
+  .cover img{
+    width:90px;
+  }
+  
+  .process img{
+    width: 250px;
+  }
+
+  h2{
+    font-size: 1.2rem;
+  }
+
+  .userResearch img,
+  .persona img,
+  .sketch-container img,
+  .wireframe-container img,
+  .prototype-container img
+  {
+     width: 250px;
+  }
+
+  .colour img{
+    width: 250px;
+ }
+
+  .links img{
+    width: 50px;
+    height: 50px;
+  }
+}
